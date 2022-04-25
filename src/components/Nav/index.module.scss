@@ -1,0 +1,26 @@
+@import "../../styles/global.scss";
+
+._{
+    background-color: $white;
+    border-bottom: 1px solid $white;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 2;
+    .container{
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.5rem;
+        .logo{
+            color:$indigo;
+            img{
+                width:200px;
+            }
+        }
+    }
+}
